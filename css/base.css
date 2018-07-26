@@ -1,0 +1,65 @@
+/* 通用样式 */
+*,
+::before,
+::after{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    /* 清除点击高亮效果 transparent透明的*/
+    -webkit-tap-highlight-color:transparent;
+    /* 盒模型  边框盒子 */
+    box-sizing: border-box;
+    /* 设置一个统一的文字 sans-serif移动端默认字体*/
+    font-family: '微软雅黑',sans-serif;
+}
+/* input标签去掉默认样式 */
+input{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+img{
+    display:block;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* 清除列表样式 */
+ol,ul{
+    list-style: none;
+}
+
+/* 左右浮动 */
+.f_l{
+    float: left;
+}
+
+.f_r{
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.b_t{
+    border-top:1px solid #e0e0e0;
+}
+.b_r{
+    border-right:1px solid #e0e0e0;
+}
+.b_b{
+    border-bottom:1px solid #e0e0e0;
+}
+.b_l{
+    border-left:1px solid #e0e0e0;
+}
